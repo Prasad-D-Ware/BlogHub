@@ -66,7 +66,7 @@ function TextEditor({
           <textarea
             onChange={onChange}
             rows={9}
-            className=" px-2 py-2 block w-full px-0 text-sm text-gray-800 bg-white border-0 focus:outline-none "
+            className=" px-2 py-2 block w-full text-sm text-gray-800 bg-white border-0 focus:outline-none "
             placeholder="Write an Blog post..."
             required
           ></textarea>

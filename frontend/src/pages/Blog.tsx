@@ -23,7 +23,6 @@ export const Blog = () => {
 
   return (
     <div>
-      {/* @ts-ignore */}
       <BlogPost blog={blog} />
     </div>
   );

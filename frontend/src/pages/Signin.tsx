@@ -9,7 +9,10 @@ export const Signin = () => {
           <Auth type="signin" />
         </div>
         <div className="hidden lg:block">
-          <Quote />
+          <Quote
+            quote="Let your inner writer come out. Post the blogs about the fields you
+            are interested in.."
+          />
         </div>
       </div>
     </div>

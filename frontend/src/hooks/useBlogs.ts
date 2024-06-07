@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { BACKEND_URL } from "../config";
 
+//Blog interface
 export interface Blog {
   content: string;
   title: string;
@@ -11,6 +12,7 @@ export interface Blog {
   };
 }
 
+//useBlog hook for rendering single blog
 export const useBlog = ({ id }: { id: string }) => {
   const [loading, setLoading] = useState(true);
   const [blog, setBlog] = useState<Blog>();
@@ -33,6 +35,7 @@ export const useBlog = ({ id }: { id: string }) => {
   };
 };
 
+// useBlogs hook for rendering all blogs
 export const useBlogs = () => {
   const [loading, setLoading] = useState(true);
   const [blogs, setBlogs] = useState<Blog[]>([]);

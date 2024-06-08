@@ -1,5 +1,6 @@
 import { ChangeEvent } from "react";
 
+//inteface for inputs
 interface labelledInputType {
   label: string;
   placeholder: string;
@@ -7,6 +8,7 @@ interface labelledInputType {
   type?: string;
 }
 
+//input box component
 export const InputBox = ({
   label,
   placeholder,

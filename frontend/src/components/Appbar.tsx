@@ -1,13 +1,16 @@
 import { Link } from "react-router-dom";
 import { Avatar } from "./BlogCard";
 
+//appbar component
 export const Appbar = () => {
   return (
     <div className="border-b flex justify-between px-10 py-4">
       <Link to={"/blogs"} className="flex justify-center flex-col">
+        {/* name of the site */}
         <div>BlogHub</div>
       </Link>
       <div>
+        {/* button for publishing  */}
         <Link to={"/publish"}>
           <button
             type="button"
@@ -16,7 +19,7 @@ export const Appbar = () => {
             New
           </button>
         </Link>
-
+        {/* user avatar with initial */}
         <Avatar size={"big"} name="Prasad" />
       </div>
     </div>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+//blog card interface
 interface BlogCardProps {
   authorName: string;
   title: string;
@@ -8,6 +9,7 @@ interface BlogCardProps {
   id: Number;
 }
 
+//blog card component for all blogs page
 export const BlogCard = ({
   id,
   authorName,
